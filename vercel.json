@@ -3,7 +3,13 @@
     "w-coffee": {
       "root": ".",
       "framework": "vite",
-      "buildCommand": "npm ci && npm run build"
+      "buildCommand": "npm ci && npm run build",
+      "rewrites": [
+        {
+          "source": "/(.*)",
+          "destination": "/index.html"
+        }
+      ]
     }
   },
   "rewrites": [
